@@ -1,4 +1,4 @@
-.App {
+/* .App {
   text-align: center;
 }
 
@@ -35,4 +35,19 @@
   to {
     transform: rotate(360deg);
   }
+} */
+.region_image{
+  height: 30%;
+  width: 30%;
+  margin: auto;
+}
+.nav{              
+  background-color: lightgray;
+  display: flex;
+  justify-content: space-around;
+}
+.footer{
+  background-color: lightgray;
+  display: flex;
+  justify-content: space-around;
 }
