@@ -23,7 +23,7 @@ function App() {
       <main className="main">
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/region" element={<Region />} />
+          <Route path="/region/:name" element={<Region />} />
           <Route path="/about" element={<About/>}/>
         </Routes>
       </main>
