@@ -27,7 +27,7 @@ function App() {
           <Route path="/about" element={<About/>}/>
           <Route path="/hike/:hikename" element={<Hikes />} />
           <Route path="/addhike" element={<AddHike />} />
-          <Route path='/edithike' element={<EditHike/>} />
+          <Route path='/edithike:hikename' element={<EditHike/>} />
         </Routes>
       </main>
       <Link to="/addhike">

@@ -25,7 +25,7 @@ const Hikes = () => {
                 hike length: {region.hikeLen}
                 hike terrain: {region.hikeTerrain}
             </p>
-            <Link to = "/edithike"> Edit Hike </Link>
+            <Link to = {"/edithike" + {hikename}}> Edit Hike </Link>
         </div>
     );
 };
