@@ -22,6 +22,7 @@ const Region = () => {
        <img src="" alt="" />
         <Link className = "hikeLinks" to={"/hike/" + e.hikeName}>Edit Hike</Link>
       </div>
+
     );
   });
 

@@ -30,9 +30,15 @@ function App() {
           <Route path='/edithike:hikename' element={<EditHike/>} />
         </Routes>
       </main>
-      <Link to="/addhike">
-        Add a hike to the database!
-      </Link>
+
+      <footer className="footer">
+                <div>
+                    <p>
+                        &copy; 2020 Thomas Hummel, Bella Maldonado, Gavin Southerland, <a href="mailto:Iyadabdulwahid23@gmail.com" class="footer__link">Iyad Abdulwahid</a>
+                    </p>
+                </div>
+      </footer>
+
     </div>
   );
 }
