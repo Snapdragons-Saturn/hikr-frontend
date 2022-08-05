@@ -2,7 +2,7 @@ import React from 'react';
 
 const About = () => {
     return (
-        <div >
+        <div className='about_text'>
             <h1>
                 <em>
                 WELCOME TO HIKR!
