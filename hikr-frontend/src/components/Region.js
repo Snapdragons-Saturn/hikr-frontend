@@ -29,27 +29,41 @@ const Region = () => {
   const handleSubmit = (event) => {
     event.preventDefault();
     axios.put(``, region);
+    setEdit(true);
+  };
+
+  const handleChange = (event) => {
+    setRegion({ ...region, [event.target.id]: event.target.value });
   };
 
   let regionList = region.map((e) => {
     return (
-        //display region info below
+      //display region info below
       <div className="regionMap" key="">
         {e.name}
         {}
         <img src="" alt="" />
-        <button onClick = {showEdit}>Edit Hike</button>
+        <button onClick={showEdit}>Edit Hike</button>
       </div>
     );
   });
   // eslint-disable-next-line no-lone-blocks
   {
-    edit ? (<div>{regionList}</div> 
-    ) : ( 
-    <div>
-        
-    </div>
-    )
+    edit ? (
+      <div>{regionList}</div>
+    ) : (
+      <div>
+        <form onSubmit={handleSubmit}>
+          <label>
+            {/* add a drop down menu where user can select what to edit and then submit to make those changes */}
+          </label>
+          <input type = "text" onChange={handleChange}></input>
+          <button type = "Submit">Submit</button>
+          <button onClick={showRegions}>Close Edit</button>
+        </form>
+        <button onClick={handleDelete}>Delete Hike</button>
+      </div>
+    );
   }
 };
 export default Region;
