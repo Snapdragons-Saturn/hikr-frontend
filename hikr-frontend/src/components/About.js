@@ -2,7 +2,7 @@ import React from 'react';
 
 const About = () => {
     return (
-        <div className='biggest_div'>
+        <div >
             <h1>
                 <em>
                 WELCOME TO HIKR!
