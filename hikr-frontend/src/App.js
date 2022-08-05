@@ -27,6 +27,13 @@ function App() {
           <Route path="/about" element={<About/>}/>
         </Routes>
       </main>
+      <footer className="footer">
+                <div>
+                    <p>
+                        &copy; 2020 Thomas Hummel, Bella Maldonado, Gavin Southerland, <a href="mailto:Iyadabdulwahid23@gmail.com" class="footer__link">Iyad Abdulwahid</a>
+                    </p>
+                </div>
+      </footer>
     </div>
   );
 }
