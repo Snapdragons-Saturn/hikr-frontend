@@ -3,12 +3,8 @@ import axios from "axios";
 import {Link} from 'react-router-dom'
 
 const Home = () => {
-const regions = [{
-    name: ""
-}]
+// const regions = {}
 
-
-  let regionList = regions.map((e) => {
     return (
         <div className='big_div'>
             <div className='img1'>
@@ -40,10 +36,8 @@ const regions = [{
         </div>
         
     );
-  });
-  return <div>{regionList}</div>;
-};
-
+  }
+  
 export default Home;
 
 

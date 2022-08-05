@@ -3,20 +3,20 @@ import axios from 'axios';
 import {useParams, Link} from 'react-router-dom'
 
 const Hikes = () => {
-    const {hikename} = useParams()
+    const {hikeName} = useParams()
     const [region, setRegion] = useState()
 
-    //get by id
     useEffect(() => {
-        axios.get(``).then((res) => {
-          setRegion(res.data);
+        axios.get(`http://localhost:8080/api/hikes`).then((res) => {
+            console.log(res)
+            setRegion(res);
         });
-      }, [hikename]);
+      }, []);
     
-    
+
     return (
         <div>
-            <h1>{hikename}</h1>
+            <h1>{region.hikeName}</h1>
             <img src={region.img_url} alt =''/>
             <p>
                 region: {region.region}
@@ -25,7 +25,7 @@ const Hikes = () => {
                 hike length: {region.hikeLen}
                 hike terrain: {region.hikeTerrain}
             </p>
-            <Link to = {"/edithike" + {hikename}}> Edit Hike </Link>
+            <Link to = {"/edithike" + {hikeName}}> Edit Hike </Link>
         </div>
     );
 };

@@ -5,14 +5,14 @@ import {  useNavigate, useParams } from "react-router-dom"
 const EditHike = () => {
   const [region, setRegion] = useState();
   const [hike, setHike] = useState()
-  const {hikename} = useParams()
+  const {hikeName} = useParams()
   const navigate = useNavigate()
 
   useEffect(() => {
     axios.get(``).then((res) => {
       setHike(res.data);
     });
-  }, [hikename]);
+  }, [hikeName]);
 
   const handleDelete = (event) => {
     event.preventDefault();
@@ -31,7 +31,7 @@ const EditHike = () => {
   };
 
   return <div>
-    <h2>Editing {hikename}</h2>
+    <h2>Editing {hikeName}</h2>
     <form onSumbit={handleSubmit}>
         <label></label>
         <input> onChange={handleChange}</input>

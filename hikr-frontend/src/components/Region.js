@@ -3,15 +3,18 @@ import axios from "axios";
 import { useParams, Link } from "react-router-dom";
 
 const Region = () => {
-  const { name } = useParams;
+//   const { name } = useParams;
   const [region, setRegion] = useState();
   
 
   useEffect(() => {
-    axios.get(``).then((res) => {
-      setRegion(res.data);
+    axios.get('').then((res) => {
+    console.log(res)
+    res.send(res.data)
+      setRegion(res);
     });
-  }, [name]);
+  }, []);
+
 
 
   let regionList = region.map((e) => {

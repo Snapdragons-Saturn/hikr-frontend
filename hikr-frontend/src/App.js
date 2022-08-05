@@ -1,4 +1,3 @@
-
 import './App.css';
 import {Routes, Route, Link} from "react-router-dom"
 import About from './components/About';
@@ -25,9 +24,9 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/region/:name" element={<Region />} />
           <Route path="/about" element={<About/>}/>
-          <Route path="/hike/:hikename" element={<Hikes />} />
+          <Route path="/hike/:hikeName" element={<Hikes />} />
           <Route path="/addhike" element={<AddHike />} />
-          <Route path='/edithike:hikename' element={<EditHike/>} />
+          <Route path='/edithike:hikeName' element={<EditHike/>} />
         </Routes>
       </main>
 
@@ -44,3 +43,5 @@ function App() {
 }
 
 export default App;
+
+
