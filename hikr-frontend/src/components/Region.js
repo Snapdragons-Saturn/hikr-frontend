@@ -2,7 +2,7 @@ import React from 'react';
 
 const Region = () => {
     return (
-        <div>
+        <div className='biggest_div'>
             
         </div>
     );

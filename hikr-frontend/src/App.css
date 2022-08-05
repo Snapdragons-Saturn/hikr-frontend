@@ -1,38 +1,62 @@
-.App {
-  text-align: center;
+.App{
+  background-image: url("https://www.rei.com/dam/parrish_091412_0679_main_lg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.big_div{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.img1 { grid-area: 1 / 1 / 2 / 3; }
+.img2 { grid-area: 1 / 3 / 2 / 5; }
+.img3 { grid-area: 2 / 1 / 2 / 3; }
+.img4 { grid-area: 2 / 3 / 2 / 5; }
+
+.img_text1{
+  grid-row: 1;
+  grid-column: 1;
+  font-size: large;
+  color: blueviolet;
+} 
+.img_text2{
+grid-row: 1;
+grid-column: 3;
+}
+.img_text3{
+  grid-row: 2;
+  grid-column: 1;
+}
+.img_text4{
+  grid-row: 2;
+  grid-column: 3;
+}
+.region_image{
+  height: 95%;
+  width: 95%;
+}
+/* .region_image:hover{
+  opacity: 0.2;
+} */
+.text{
+  font-size: large;
+  color: blueviolet;
+  border: 1px solid black;
+  background-color: lightgray
+}
+.text:hover{
+  opacity: 0.5;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.nav{              
+  background-color: lightgray;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-around;
 }
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.footer{
+  background-color: lightgray;
+  display: flex;
 }
