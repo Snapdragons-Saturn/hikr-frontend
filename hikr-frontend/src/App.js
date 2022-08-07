@@ -8,7 +8,6 @@ import Region from './components/Region';
 function App() {
   return (
     <div className="App">
-      <h1 className = "title">Hikr App! Where all your hiking dreams come true!</h1>
     <nav className = "nav">
       <Link className="nav2" to="/">
         <h1>Home</h1>
@@ -20,6 +19,7 @@ function App() {
           <h1>Countries</h1>
         </Link>
       </nav>
+      <h1 className = "title">Hikr App! Where all your hiking dreams come true!</h1>
       <main className="main">
         <Routes>
           <Route path="/" element={<Home />} />

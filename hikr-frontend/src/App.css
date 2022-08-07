@@ -52,7 +52,7 @@
   height: 450px;
   width: 600px;
   border-radius: 10px;
-  border: 1px solid white;
+  border: 1px solid #FDFBF6;
   
 }
 /* .region_image:hover{
@@ -73,7 +73,7 @@
   background-color: #EAD6A0;
   display: flex;
   justify-content: space-around;
-  border-radius: 12px;
+  border-radius: 10px;
 }
 .nav2{
   background-color: #EAD6A0;
@@ -91,6 +91,7 @@
   font-size: large;
   color: #9C7459;
   background-color: #EAD6A0;
+  border-radius: 7px;
 }
 .footer{
   background-color: #EAD6A0;
