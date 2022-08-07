@@ -24,7 +24,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/regions/:region" element={<Region />} />
           <Route path="/about" element={<About/>}/>
-          <Route path="/hike/:hikeName" element={<Hikes />} />
+          <Route path="/hike/:_id" element={<Hikes />} />
           <Route path="/addhike" element={<AddHike />} />
           <Route path='/edithike:hikeName' element={<EditHike/>} />
         </Routes>
