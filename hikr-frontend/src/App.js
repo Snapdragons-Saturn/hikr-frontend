@@ -22,7 +22,7 @@ function App() {
       <main className="main">
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/region/:name" element={<Region />} />
+          <Route path="/regions/:region" element={<Region />} />
           <Route path="/about" element={<About/>}/>
           <Route path="/hike/:hikeName" element={<Hikes />} />
           <Route path="/addhike" element={<AddHike />} />
