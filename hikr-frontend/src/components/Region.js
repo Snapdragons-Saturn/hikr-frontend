@@ -5,34 +5,43 @@ import { useParams, Link } from "react-router-dom";
 function Region() {
   const { region } = useParams();
   const [hike, setHike] = useState();
+  const [loading, setLoading] = useState(true)
 
    console.log(region)
 
+
   useEffect(() => {
-    axios.get(`https://desolate-ocean-19551.herokuapp.com/api/hikes/regions/${region}`).then((res) => {
-    console.log(res.data)
-      setHike(res.data);
-    });
+    getHikes()
   }, []);
 
+  const getHikes = () => {
+    axios.get(`https://desolate-ocean-19551.herokuapp.com/api/hikes/regions/${region}`).then((res) => {
+      console.log(res.data)
+        setHike(res.data);
+        setLoading(false)
+      });
+  }
 
-
+  
   let hikeList = hike.map((e) => {
     return (
       //display region info below
       <div className="regionMap" key="">
        {e.hikeName}
        <img src="" alt="" />
-        <Link className = "hikeLinks" to={"/hike/" + e.hikeName}>Edit Hike</Link>
+        <Link className = "hikeLinks" to={"/hike/" + e._id}>Hike Details</Link>
       </div>
 
     );
   });
 
-return <div>{hikeList}</div>
-
-  }
-
+return (
+    <>
+      {hikeList}
+    </>
+  )
+  
+}
 export default Region;
 
 //ok, what do I do here?

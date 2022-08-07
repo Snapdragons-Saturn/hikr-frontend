@@ -3,13 +3,13 @@ import axios from 'axios';
 import {useParams, Link} from 'react-router-dom'
 
 const Hikes = () => {
-    const {hikeName} = useParams()
+    const {_id} = useParams()
     const [region, setRegion] = useState()
 
     useEffect(() => {
-        axios.get(`http://localhost:8080/api/hikes`).then((res) => {
-            console.log(res)
-            setRegion(res);
+        axios.get(`https://desolate-ocean-19551.herokuapp.com/api/hikes/${_id}`).then((res) => {
+            console.log(res.data)
+            setRegion(res.data);
         });
       }, []);
     
@@ -19,13 +19,12 @@ const Hikes = () => {
             <h1>{region.hikeName}</h1>
             <img src={region.img_url} alt =''/>
             <p>
-                region: {region.region}
                 state: {region.stateAbb}
                 hike difficulty: {region.hikeDiff}
                 hike length: {region.hikeLen}
                 hike terrain: {region.hikeTerrain}
             </p>
-            <Link to = {"/edithike" + {hikeName}}> Edit Hike </Link>
+            <Link to = {"/edithike" + region.hikeName}> Edit Hike </Link>
         </div>
     );
 };
