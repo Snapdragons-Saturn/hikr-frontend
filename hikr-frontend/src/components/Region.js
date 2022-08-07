@@ -2,22 +2,22 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import { useParams, Link } from "react-router-dom";
 
-const Region = () => {
-//   const { name } = useParams;
-  const [region, setRegion] = useState();
-  
+function Region() {
+  const { region } = useParams();
+  const [hike, setHike] = useState();
+
+   console.log(region)
 
   useEffect(() => {
-    axios.get('').then((res) => {
-    console.log(res)
-    res.send(res.data)
-      setRegion(res);
+    axios.get(`https://desolate-ocean-19551.herokuapp.com/api/hikes/regions/${region}`).then((res) => {
+    console.log(res.data)
+      setHike(res.data);
     });
   }, []);
 
 
 
-  let regionList = region.map((e) => {
+  let hikeList = hike.map((e) => {
     return (
       //display region info below
       <div className="regionMap" key="">
@@ -29,7 +29,7 @@ const Region = () => {
     );
   });
 
-return <div><h1>hey!</h1> </div>
+return <div>{hikeList}</div>
 
   }
 
