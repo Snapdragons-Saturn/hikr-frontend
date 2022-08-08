@@ -10,8 +10,9 @@ const AddHike = () => {
     const handleSubmit = (event) => {
       event.preventDefault();
       axios.post(`https://desolate-ocean-19551.herokuapp.com/api/hikes/`, region)
-      .then(() => {
-        navigate(`/`)
+      .then((res) => {
+        console.log(res.data)
+        navigate(`/hike/${res.data._id}`)
       })
     };
 
@@ -134,3 +135,5 @@ const AddHike = () => {
 };
 
 export default AddHike;
+
+//add it, then do a get request getting it, then navigate to it
