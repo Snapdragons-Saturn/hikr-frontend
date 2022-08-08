@@ -19,12 +19,12 @@ const Hikes = () => {
             <h1>{region.hikeName}</h1>
             <img src={region.img_url} alt =''/>
             <p>
-                state: {region.stateAbb}
-                hike difficulty: {region.hikeDiff}
-                hike length: {region.hikeLen}
-                hike terrain: {region.hikeTerrain}
+                State: {region.stateAbb}
+                Hike Difficulty: {region.hikeDiff}
+                Hike Length: {region.hikeLen}
+                Hike Terrain: {region.hikeTerrain}
             </p>
-            <Link to = {"/edithike" + region.hikeName}> Edit Hike </Link>
+            <Link to = {"/edithike" + region._id}> Edit Hike </Link>
         </div>
     );
 };
