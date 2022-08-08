@@ -10,9 +10,9 @@ const AddHike = () => {
     const handleSubmit = (event) => {
       event.preventDefault();
       axios.post(`https://desolate-ocean-19551.herokuapp.com/api/hikes/`, region)
-      // .then(() => {
-      //   navigate(`/hike/`)
-      // })
+      .then(() => {
+        navigate(`/`)
+      })
     };
 
     const handleChange = (event) => {
@@ -120,6 +120,13 @@ const AddHike = () => {
           type="text"
           onChange={handleChange}>
           </input>
+
+          <label>Image URL: </label>
+        <input 
+        id="img_url"
+        type="text"
+        onChange={handleChange}>
+        </input>
           <button type="submit">Create Hike</button>
       </form>
     </div>
