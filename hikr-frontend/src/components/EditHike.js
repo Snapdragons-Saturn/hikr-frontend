@@ -38,7 +38,7 @@ const EditHike = () => {
 
   return <div>
     <h2>Editing {hike.hikeName}</h2>
-    <form onSumbit={handleSubmit}>
+    <form onSubmit={handleSubmit}>
         <label>State: </label>
         <select 
           id = "stateAbb"

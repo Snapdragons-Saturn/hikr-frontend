@@ -9,9 +9,10 @@ const AddHike = () => {
 
     const handleSubmit = (event) => {
       event.preventDefault();
-      axios.post(`https://desolate-ocean-19551.herokuapp.com/api/hikes/`, region).then(() => {
-        navigate(`/hike/`)
-      })
+      axios.post(`https://desolate-ocean-19551.herokuapp.com/api/hikes/`, region)
+      // .then(() => {
+      //   navigate(`/hike/`)
+      // })
     };
 
     const handleChange = (event) => {
@@ -23,7 +24,7 @@ const AddHike = () => {
     return (
       <div>
       <h2>Add a New Hike!</h2>
-      <form onSumbit={handleSubmit}>
+      <form onSubmit={handleSubmit}>
           <label>State: </label>
           <select 
           id = "stateAbb"
