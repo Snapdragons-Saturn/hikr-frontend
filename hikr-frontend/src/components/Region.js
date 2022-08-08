@@ -28,7 +28,7 @@ function Region() {
       //display region info below
       <div className="regionMap" key="">
        {e.hikeName}
-       <img src="" alt="" />
+       <img src={e.img_url} alt={e._id} />
         <Link className = "hikeLinks" to={"/hike/" + e._id}>Hike Details</Link>
       </div>
 
@@ -37,7 +37,7 @@ function Region() {
 
 return (
     <>
-      {hikeList}
+      {loading ? <div>Loading...</div> : <div>{hikeList}</div>}
     </>
   )
   

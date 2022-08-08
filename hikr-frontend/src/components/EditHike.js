@@ -3,40 +3,43 @@ import axios from "axios";
 import {  useNavigate, useParams } from "react-router-dom"
 
 const EditHike = () => {
-  const [region, setRegion] = useState();
-  const [hike, setHike] = useState()
-  const {hikeName} = useParams()
+  const [region, setRegion] = useState([]);
+  const [hike, setHike] = useState([])
+  const {_id} = useParams()
   const navigate = useNavigate()
 
   useEffect(() => {
-    axios.get(``).then((res) => {
+    axios.get(`https://desolate-ocean-19551.herokuapp.com/api/hikes/${_id}`).then((res) => {
+      console.log(res.data)
       setHike(res.data);
     });
-  }, [hikeName]);
+  }, []);
 
   const handleDelete = (event) => {
     event.preventDefault();
-    axios.delete(``, region).then(() => {
+    axios.delete(`https://desolate-ocean-19551.herokuapp.com/api/hikes/${_id}`, region).then(() => {
         navigate('/region/' + hike.region)
     })
   };
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    axios.put(``, region);
+    axios.put(`https://desolate-ocean-19551.herokuapp.com/api/hikes/${_id}`, region);
   };
 
   const handleChange = (event) => {
     setRegion({ ...region, [event.target.id]: event.target.value });
   };
 
+  console.log(region)
+
   return <div>
-    <h2>Editing {hikeName}</h2>
+    <h2>Editing {hike.hikeName}</h2>
     <form onSumbit={handleSubmit}>
         <label></label>
-        <input> onChange={handleChange}</input>
+        <input onChange={handleChange}></input>
     </form>
-    <button onClick={handleDelete}></button>
+    <button onClick={handleDelete}>Delete Hike</button>
   </div>;
 };
 
