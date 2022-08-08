@@ -1,7 +1,8 @@
 .App{
-  background-image: url("https://www.rei.com/dam/parrish_091412_0679_main_lg.jpg");
+  /* background-image: url("https://www.rei.com/dam/parrish_091412_0679_main_lg.jpg"); */
   background-repeat: no-repeat;
   background-size: cover;
+  background-color:#9C7459;
 }
 
 .title{
@@ -103,4 +104,17 @@
   background-color: #EAD6A0;
   display: flex;
   border-radius: 12px;
+}
+
+/* Region Styling */
+
+.regionMap{
+  display: flex;
+  justify-content: space-around;
+  height: 450px;
+  width: 600px;
+  border-radius: 10px;
+  border: 1px solid #EAD6A0;
+  align-items: center;
+
 }
