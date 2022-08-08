@@ -24,9 +24,9 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/regions/:region" element={<Region />} />
           <Route path="/about" element={<About/>}/>
-          <Route path="/hike/:_id" element={<Hikes />} />
+          <Route path="/hike/:region/:_id" element={<Hikes />} />
           <Route path="/addhike" element={<AddHike />} />
-          <Route path='/edithike:_id' element={<EditHike/>} />
+          <Route path='/edithike/:region/:_id' element={<EditHike/>} />
         </Routes>
       </main>
     

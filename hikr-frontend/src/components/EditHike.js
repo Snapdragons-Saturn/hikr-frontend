@@ -3,9 +3,9 @@ import axios from "axios";
 import {  useNavigate, useParams } from "react-router-dom"
 
 const EditHike = () => {
-  const [region, setRegion] = useState([]);
+  const [place, setPlace] = useState([]);
   const [hike, setHike] = useState([])
-  const {_id} = useParams()
+  const {_id, region} = useParams()
   const navigate = useNavigate()
 
   useEffect(() => {
@@ -17,24 +17,24 @@ const EditHike = () => {
 
   const handleDelete = (event) => {
     event.preventDefault();
-    axios.delete(`https://desolate-ocean-19551.herokuapp.com/api/hikes/${_id}`, region).then(() => {
-        navigate('/region/' + hike.region)
+    axios.delete(`https://desolate-ocean-19551.herokuapp.com/api/hikes/${_id}`, place).then(() => {
+        navigate('/regions/' + region)
     })
   };
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    axios.put(`https://desolate-ocean-19551.herokuapp.com/api/hikes/${_id}`, region).then(() => {
+    axios.put(`https://desolate-ocean-19551.herokuapp.com/api/hikes/${_id}`, place).then(() => {
       navigate(`/hike/${_id}`)
     })
     
   };
 
   const handleChange = (event) => {
-    setRegion({ ...region, [event.target.id]: event.target.value });
+    setPlace({ ...place, [event.target.id]: event.target.value });
   };
 
-  console.log(region)
+  console.log(place)
 
   return <div>
     <h2>Editing {hike.hikeName}</h2>
@@ -138,6 +138,15 @@ const EditHike = () => {
         id="hikeDesc"
         type="text"
         defaultValue={hike.hikeDesc}
+        onChange={handleChange}>
+        </input>
+        <button type="submit">Update Hike</button>
+
+        <label>Image URL: </label>
+        <input 
+        id="img_url"
+        type="text"
+        defaultValue={hike.img_url}
         onChange={handleChange}>
         </input>
         <button type="submit">Update Hike</button>
