@@ -4,7 +4,7 @@ import {useParams, Link} from 'react-router-dom'
 
 const Hikes = () => {
     const {_id} = useParams()
-    const [region, setRegion] = useState()
+    const [region, setRegion] = useState([])
 
     useEffect(() => {
         axios.get(`https://desolate-ocean-19551.herokuapp.com/api/hikes/${_id}`).then((res) => {

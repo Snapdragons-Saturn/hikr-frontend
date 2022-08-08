@@ -4,7 +4,7 @@ import { useParams, Link } from "react-router-dom";
 
 function Region() {
   const { region } = useParams();
-  const [hike, setHike] = useState();
+  const [hike, setHike] = useState([]);
   const [loading, setLoading] = useState(true)
 
    console.log(region)
