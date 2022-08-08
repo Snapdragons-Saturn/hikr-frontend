@@ -29,9 +29,11 @@ function App() {
           <Route path='/edithike:_id' element={<EditHike/>} />
         </Routes>
       </main>
+    
 
       <footer className="footer">
                 <div>
+                  <Link to="/addhike">Add a Hike</Link>
                     <p>
                         &copy; 2020 Thomas Hummel, Bella Maldonado, Gavin Southerland, <a href="mailto:Iyadabdulwahid23@gmail.com" class="footer__link">Iyad Abdulwahid</a>
                     </p>
