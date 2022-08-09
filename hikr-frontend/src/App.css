@@ -54,6 +54,19 @@ html {
   border-radius: 12px;
   text-decoration: none;
 }
+.nav3{
+  background-color: #EAD6A0;
+  display: flex;
+  justify-content: space-around;
+  border-radius: 12px;
+  text-decoration: none;
+  color: #D87C74;
+
+}.nav3:hover{
+  color: white;
+  text-decoration: underline;
+  font-style: italic;
+}
 
 .nav2:hover{
   text-decoration: underline overline;
@@ -157,6 +170,24 @@ html {
   font-style:italic;
 }
 
+
+.signUpLink{
+  display: block;
+  justify-content: center;
+  border-radius: 12px;
+  text-decoration: none;
+  color: #D87C74
+}
+
+.signUpLink:hover{
+  color:#447f2d;
+  text-decoration: underline;
+  font-style: italic;
+}
+.login-Form{
+  display: flex;
+  justify-content: space-around;
+} 
 .hikeTitle {
   color:#2e0402;
   display:flex;

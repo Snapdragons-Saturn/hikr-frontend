@@ -6,6 +6,8 @@ import Region from './components/Region';
 import Hikes from './components/Hikes'
 import AddHike from './components/AddHike'
 import EditHike from './components/EditHike'
+import Login from './components/Login'
+import SignUp from './components/Sign-Up';
 
 
 function App() {
@@ -18,15 +20,20 @@ function App() {
       <Link className="nav2" to="/about">
           <h1 className="navStyle">About</h1>
         </Link>
+        <Link className="nav3" to="/login">
+          <h1>Log In</h1>
+        </Link>
       </nav>
       <main className="main">
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/regions/:region" element={<Region />} />
+          <Route path="/login" element={<Login/>} />
           <Route path="/about" element={<About/>}/>
           <Route path="/hike/:_id" element={<Hikes />} />
           <Route path="/addhike" element={<AddHike />} />
           <Route path='/edithike/:region/:_id' element={<EditHike/>} />
+          <Route path="/Sign-Up" element={<SignUp />} />
         </Routes>
       </main>
       <footer className="footer">
