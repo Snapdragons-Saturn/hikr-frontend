@@ -6,6 +6,7 @@ import Region from './components/Region';
 import Hikes from './components/Hikes'
 import AddHike from './components/AddHike'
 import EditHike from './components/EditHike'
+import User from './components/User'
 
 
 function App() {
@@ -18,12 +19,16 @@ function App() {
       <Link className="nav2" to="/about">
           <h1>About</h1>
         </Link>
+        <Link className="nav3" to="/user">
+          <h1>Hikrs</h1>
+        </Link>
       </nav>
       <h1 className = "title">Hikr App! Where all your hiking dreams come true!</h1>
       <main className="main">
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/regions/:region" element={<Region />} />
+          <Route path="/User" element={<User />} />
           <Route path="/about" element={<About/>}/>
           <Route path="/hike/:_id" element={<Hikes />} />
           <Route path="/addhike" element={<AddHike />} />
