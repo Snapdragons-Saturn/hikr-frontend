@@ -27,12 +27,13 @@
   color: #D87C74;
 }
 .nav2:hover{
-  color: steelblue;
+  color: white;
   text-decoration: underline;
+  font-style: italic;
 }
 .about_text{
   font-size: large;
-  color:#add8e6;;
+  color:#D87C74;;
   background-color: #EAD6A0;
   border-radius: 7px;
 }
@@ -52,19 +53,31 @@
   color:#EAD6A0;
   overflow: hidden;
   margin: auto;
+  border-radius: 15px;
 }
 .hikeLinks{
   font-size: xx-large;
-  color:steelblue;
+  color:#D87C74;
   display:flex;
   justify-content: center;
-}
-.hikeLinks :hover{
   text-decoration: none;
+  margin-top: 1vw;
+}
+.hikeLinks:hover{
+  color: white;
+  text-decoration: underline;
+  font-style: italic;
 }
 
 .countryLinks{
   text-decoration: none;
   display: flex;
   justify-content: space-around;
+  color:#D87C74;
+  font-size: xx-large
+}
+.countryLinks:hover{
+  color: white;
+  text-decoration: underline;
+  font-style: italic;
 }
