@@ -49,6 +49,11 @@ html {
   border-radius: 12px;
   text-decoration: none;
   color: #D87C74;
+  
+}.nav3:hover{
+  color: white;
+  text-decoration: underline;
+  font-style: italic;
 }
 
 .nav2:hover{

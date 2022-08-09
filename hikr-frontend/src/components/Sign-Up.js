@@ -1,11 +1,11 @@
 import { useEffect, useState } from "react";
 
-function User (){
+function SignUp () {
     return(
         <>
-        <h1> Welcome to the user component</h1>
+        <h1> Sign Up Component</h1>
         </>
     )
 }
 
-export default User
+export default SignUp
