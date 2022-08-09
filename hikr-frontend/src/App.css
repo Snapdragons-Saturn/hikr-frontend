@@ -149,7 +149,7 @@ html {
 }
 
 .signUpLink{
-  display: flex;
+  display: block;
   justify-content: center;
   border-radius: 12px;
   text-decoration: none;
@@ -160,4 +160,8 @@ html {
   color:#447f2d;
   text-decoration: underline;
   font-style: italic;
+}
+.login-Form{
+  display: flex;
+  justify-content: space-around;
 }
