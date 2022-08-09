@@ -25,6 +25,7 @@ const Hikes = () => {
         {loading === true ?  <div><WindMillLoading/></div> :
         <div>
             <h1>{hike.hikeName}</h1>
+            <Link to = {"/edithike/" + region + '/' + hike._id}> Edit Hike </Link>
             <p>
                 State: {hike.stateAbb}
                 Hike Difficulty: {hike.hikeDiff}
@@ -32,7 +33,6 @@ const Hikes = () => {
                 Hike Terrain: {hike.hikeTerrain}
             </p>
             <img src={hike.img_url} alt =''/>
-            <Link to = {"/edithike/" + region + '/' + hike._id}> Edit Hike </Link>
             </div>
         }
         </> 
