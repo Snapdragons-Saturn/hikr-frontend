@@ -27,7 +27,6 @@ const EditHike = () => {
     axios.put(`https://desolate-ocean-19551.herokuapp.com/api/hikes/${_id}`, place).then(() => {
       navigate(`/hike/${region}/${_id}`)
     })
-    
   };
 
   const handleChange = (event) => {
