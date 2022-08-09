@@ -5,6 +5,18 @@
   font-family:'Lato','Helvetica Neue', Arial, sans-serif;
 }
 
+@font-face {
+  font-family: 'forest-font';
+  src: url(fonts/CfOneTwoTreesRegular-4LGp\ copy.ttf);
+  font-style: normal;
+  font-weight: 100;
+}
+
+@font-face {
+  font-family: 'forest-font2';
+  src: url(fonts/Jfwildwood-ldYZ\ copy.ttf);
+}
+
 html {
   background: url("https://glenella.com/wp-content/uploads/2016/01/attractions-in-north-georgia-1.jpg")
     no-repeat center center fixed;
@@ -22,31 +34,29 @@ html {
   height: 95vh;
 }
 .title{
-  font-size: 40px;
+  font-size: 70px;
   text-align: center;
-  margin-top: 0;
-  color: #447f2d;
-  font-family:'Lato','Helvetica Neue', Arial, sans-serif;
+  color: #653d28ef;
+  font-family: "forest-font";
+  margin-top: 6vh;
+  margin-bottom: 0
 }
 .nav{
-  background-color: #EAD6A0;
+  background-color: rgba(158, 149, 80, 0.516);
   display: flex;
   justify-content: space-around;
   border-radius: 10px;
+  
 }
 .nav2{
-  background-color: #EAD6A0;
   display: flex;
   justify-content: space-around;
   border-radius: 12px;
   text-decoration: none;
-  color: #D87C74;
 }
 
 .nav2:hover{
-  color: white;
-  text-decoration: underline;
-  font-style: italic;
+  text-decoration: underline overline;
 }
 .about_text{
   font-size: large;
@@ -55,7 +65,7 @@ html {
   border-radius: 7px;
 }
 .footer{
-  background-color: #EAD6A0;
+  background-color: rgba(158, 149, 80, 0.516);
   border-radius: 12px;
   position: fixed;
   bottom: 0;
@@ -66,27 +76,34 @@ html {
   display:block;
   /* position:relative; */
   top: 7vw;
-  width: 46vw;
-  height: 60vh;
-  margin: auto;
+  width: 80vw;
   color:#EAD6A0;
   overflow: hidden;
-  margin: auto;
   border-radius: 15px;
+  margin: auto;
+  text-align: center;
+}
+
+.regionImage{
+  margin: auto;
+  
+  object-fit:cover;
+  text-align: center;
 }
 
 .hikeLinks{
   font-size: xx-large;
-  color:#D87C74;
+  color:#2e0402;
   display:flex;
   justify-content: center;
   text-decoration: none;
   margin: auto;
+  font-family: 'forest-font';
+  font-size: 6vh;
+  background-color: rgba(158, 149, 80, 0.516);
 }
 .hikeLinks:hover{
   color: white;
-  text-decoration: underline;
-  font-style: italic;
 }
 
 .countryLinks{
@@ -104,7 +121,8 @@ html {
 
 .homeLinks {
   font-size: xx-large;
-  color:#D87C74;
+  color: #653d28ef;
+  font-family: "forest-font2";
   display:flex;
   justify-content: center;
   text-decoration: none;
@@ -112,14 +130,18 @@ html {
 }
 
 .homeLinks:hover{
-  text-decoration: underline;
-  font-style: italic;
+  text-decoration: underline overline;
 }
 
-.img1{
+.imgimg{
+  background-color: rgba(158, 149, 80, 0.516);
+  width: 50vh;
   margin: auto;
-  text-align: center;
+  border-radius: 25px;
+  padding: 2vh;
+  padding-top: .5vh;
 }
+
 
 .addHikeLink {
   margin: auto;
@@ -133,4 +155,27 @@ html {
 
 .addHikeFooter:hover{
   font-style:italic;
+}
+
+.hikeTitle {
+  color:#2e0402;
+  display:flex;
+  justify-content: center;
+  text-decoration: none;
+  margin: auto;
+  font-family: 'forest-font';
+  font-size: 4vh;
+  background-color: rgba(158, 149, 80, 0.516);
+}
+
+.navStyle {
+  color: #653d28ef;
+  font-family: "forest-font";
+  font-size: 3vh;
+}
+
+.navStyle {
+  color: #653d28ef;
+  font-family: "forest-font";
+  font-size: 3vh;
 }
