@@ -49,7 +49,7 @@ html {
   border-radius: 12px;
   text-decoration: none;
   color: #D87C74;
-  
+
 }.nav3:hover{
   color: white;
   text-decoration: underline;
@@ -146,4 +146,18 @@ html {
 
 .addHikeFooter:hover{
   font-style:italic;
+}
+
+.signUpLink{
+  display: flex;
+  justify-content: center;
+  border-radius: 12px;
+  text-decoration: none;
+  color: #D87C74
+}
+
+.signUpLink:hover{
+  color:#447f2d;
+  text-decoration: underline;
+  font-style: italic;
 }

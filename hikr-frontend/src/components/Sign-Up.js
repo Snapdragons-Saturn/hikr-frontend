@@ -33,7 +33,7 @@ function SignUp () {
 
 
     return(
-        <div className='form'>
+        <div className='Sign-up-form'>
 			<h1>Sign Up</h1>
 			<form>
 				<input 
