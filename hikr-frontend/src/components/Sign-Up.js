@@ -28,29 +28,33 @@ function SignUp () {
 		
 	
 	}
+
+	console.log(signUp)
 	
 
 
 
     return(
         <div className='Sign-up-form'>
-			<h1>Sign Up</h1>
+			<h1 className="titleLogin">Sign Up</h1>
 			<form>
+			<label htmlFor='username'>Username</label>
 				<input 
 				type='text' 
 				placeholder='Username'
 				id='username' 
 				onChange={handleChange} 
 				value={signUp.username}/> 
-				<label htmlFor='username'>Username</label>
-
+	
+				<br></br>
+				<label htmlFor='password'>Password</label>
 				<input 
 				type='password' 
 				placeholder='Password' id='password'
 				onChange={handleChange} 
 				value={signUp.password} />
-				<label htmlFor='password'>Password</label>
-
+				<br></br>
+				<label htmlFor='passwordConfirm'>Confirm password </label>
 				<input
 				type='password'
 				placeholder='Confirm password'
@@ -58,8 +62,8 @@ function SignUp () {
 				onChange={handleChange}
 				value={signUp.passwordConfirm}
 				/>
-				<label htmlFor='passwordConfirm'>Confirm password </label>
-
+				<br></br>
+				<br></br>
 				<button type='submit' onClick={handleSubmit} >Sign Up</button>
 				<p className={signUp.valid ? 'valid' : 'invalid'}>Passwords must match.</p>
 			</form>

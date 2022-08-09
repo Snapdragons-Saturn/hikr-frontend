@@ -20,8 +20,8 @@ function App() {
       <Link className="nav2" to="/about">
           <h1 className="navStyle">About</h1>
         </Link>
-        <Link className="nav3" to="/login">
-          <h1>Log In</h1>
+        <Link className="nav2" to="/login">
+          <h1 className="navStyle">Log In</h1>
         </Link>
       </nav>
       <main className="main">
