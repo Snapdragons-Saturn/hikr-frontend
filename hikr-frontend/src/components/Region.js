@@ -28,10 +28,8 @@ function Region() {
     return (
       //display region info below
       <div className="regionMap" key="">
-      <Link className = "hikeLinks" to={"/hike/" + e._id}>Hike Details</Link>
-       {e.hikeName}
-
-       <img src={e.img_url} alt={e._id} />
+      <Link className = "hikeLinks" to={"/hike/" + e._id}>{e.hikeName}</Link>
+       <img classname = "regionImage"src={e.img_url} alt={e._id} />
       </div>
     );
   });
