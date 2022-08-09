@@ -7,6 +7,7 @@ import Hikes from './components/Hikes'
 import AddHike from './components/AddHike'
 import EditHike from './components/EditHike'
 import Login from './components/Login'
+import SignUp from './components/Sign-Up';
 
 
 function App() {
@@ -33,6 +34,7 @@ function App() {
           <Route path="/hike/:_id" element={<Hikes />} />
           <Route path="/addhike" element={<AddHike />} />
           <Route path='/edithike/:region/:_id' element={<EditHike/>} />
+          <Route path="/Sign-Up" element={<SignUp />} />
         </Routes>
       </main>
       <footer className="footer">
