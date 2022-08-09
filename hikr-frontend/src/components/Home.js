@@ -1,37 +1,40 @@
-import React from 'react';
+import { useEffect, useState } from "react";
+import axios from "axios";
+import { Link } from "react-router-dom";
+import list from '../list.json'
+import { WindMillLoading } from 'react-loadingg';
+
+
 
 const Home = () => {
+  // const regions = {}
+  const [loading, setLoading] = useState(true)
+
+  useEffect(() => {
+    setTimeout(() => setLoading(false), 500)
+  }, [])
+
+  let regionList =
+  list.map(e => 
+    {
     return (
-        <div className='big_div'>
-            <div className='img1'>
-                <img src="https://images.unsplash.com/photo-1518791841217-8f162f1e1131?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80" alt="hike" className="region_image" />
-            </div>
-                <div className='img_text1'>
-                    <h4 className='text'>Hike/Region</h4>
-                </div>
+    <div>
+      <div className="img1" key={e.id}>
+        <p>
+          <Link className="homeLinks" to={"/regions/" + e.region}> {e.name}</Link>
+        </p>
+      </div>
+    </div>
+    
+  )});
+  return (
+  <div>
+  {loading === true ? <div><WindMillLoading height="large"/></div>  : <div>{regionList}</div>}
+  </div>
+  )
+  };
 
-                <div className='img2'>
-                    <img src="https://images.unsplash.com/photo-1518791841217-8f162f1e1131?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80"  alt="hike" className="region_image" />
-                </div>
-                    <div className='img_text2'>
-                        <h4 className='text'>Hike/Region</h4>
-                    </div>
 
-                <div className='img3'>
-                    <img src="https://images.unsplash.com/photo-1518791841217-8f162f1e1131?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80"  alt="hike" className="region_image" />
-                </div>
-                    <div className='img_text3'>
-                        <h4 className='text'>Hike/Region</h4>
-                    </div>
-                <div className='img4'>
-                    <img src="https://images.unsplash.com/photo-1518791841217-8f162f1e1131?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80"  alt="hike" className="region_image" />
-                </div>
-                    <div className='img_text4'>
-                        <h4 className='text'>Hike/Region</h4>
-                    </div>
-        </div>
-        
-    );
-};
+
 
 export default Home;
