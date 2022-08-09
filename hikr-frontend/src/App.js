@@ -13,13 +13,12 @@ function App() {
     <div className="App">
     <nav className = "nav">
       <Link className="nav2" to="/">
-        <h1>Home</h1>
+        <h1 className="navStyle">Home</h1>
       </Link>
       <Link className="nav2" to="/about">
-          <h1>About</h1>
+          <h1 className="navStyle">About</h1>
         </Link>
       </nav>
-      <h1 className = "title">Hikr App! Where all your hiking dreams come true!</h1>
       <main className="main">
         <Routes>
           <Route path="/" element={<Home />} />
