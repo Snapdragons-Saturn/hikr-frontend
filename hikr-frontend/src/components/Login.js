@@ -23,8 +23,8 @@ function Login (){
 
     return(
         <div className="login-Form">
+            <div className="titleLogin">Sign In</div>
             <div className="login-form">
-                <div className="title">Sign In</div>
                     {isSubmitted ? <div>User is successfully logged in</div> : Login}
                 </div>
             <form onSubmit={handleSubmit}>
@@ -45,7 +45,7 @@ function Login (){
             </form>
 
 
-            <Link className="signUpLink" to='/Sign-Up'>
+            <Link className="signUpLink2" to='/Sign-Up'>
                 <h1>Sign-Up</h1>
             </Link>
         

@@ -54,23 +54,17 @@ html {
   border-radius: 12px;
   text-decoration: none;
 }
-.nav3{
-  background-color: #EAD6A0;
-  display: flex;
-  justify-content: space-around;
-  border-radius: 12px;
-  text-decoration: none;
-  color: #D87C74;
 
-}.nav3:hover{
+nav2:hover{
   color: white;
   text-decoration: underline;
-  font-style: italic;
 }
 
 .nav2:hover{
   text-decoration: underline overline;
+  color: #653d28ef;
 }
+
 .about_text{
   font-size: large;
   color:#D87C74;;
@@ -171,23 +165,33 @@ html {
 }
 
 
-.signUpLink{
+.UpLink2{
+  font-family: 'forest-font';
   display: block;
   justify-content: center;
   border-radius: 12px;
   text-decoration: none;
-  color: #D87C74
+  color:#2e0402;
 }
 
 .signUpLink:hover{
-  color:#447f2d;
-  text-decoration: underline;
-  font-style: italic;
+  
+  text-decoration: overline underline;
 }
 .login-Form{
-  display: flex;
-  justify-content: space-around;
+  text-align: center;
+  padding: 4vh;
 } 
+
+.titleLogin{
+  font-size: 70px;
+  text-align: center;
+  color: #653d28ef;
+  font-family: "forest-font";
+  margin-top: 6vh;
+  margin-bottom: 4vh;
+}
+
 .hikeTitle {
   color:#2e0402;
   display:flex;
@@ -209,4 +213,9 @@ html {
   color: #653d28ef;
   font-family: "forest-font";
   font-size: 3vh;
+}
+
+.Sign-up-form{
+  margin: auto;
+  text-align: center;
 }
