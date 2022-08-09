@@ -32,8 +32,6 @@ function Region() {
        {e.hikeName}
 
        <img src={e.img_url} alt={e._id} />
-        <Link className = "hikeImg" to={"/hike/" + region + '/' + e._id}>Hike Details</Link>
-
       </div>
     );
   });
