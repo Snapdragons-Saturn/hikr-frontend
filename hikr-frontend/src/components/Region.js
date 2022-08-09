@@ -1,11 +1,20 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import { useParams, Link } from "react-router-dom";
+import { WindMillLoading } from 'react-loadingg';
+
 function Region() {
   const { region } = useParams();
   const [hike, setHike] = useState([]);
-  const [loading, setLoading] = useState(true)
+  const [loading, setLoading] = useState(true);
+
    console.log(region)
+
+  useEffect(() => {
+    setTimeout(() => setLoading(false), 1000)
+  }, [])
+
+
   useEffect(() => {
     getHikes()
   }, []);
@@ -13,7 +22,6 @@ function Region() {
     axios.get(`https://desolate-ocean-19551.herokuapp.com/api/hikes/regions/${region}`).then((res) => {
       console.log(res.data)
         setHike(res.data);
-        setLoading(false)
       });
   }
   let hikeList = hike.map((e) => {
@@ -22,13 +30,16 @@ function Region() {
       <div className="regionMap" key="">
       <Link className = "hikeLinks" to={"/hike/" + e._id}>Hike Details</Link>
        {e.hikeName}
-       <img className="hikeImg"src={e.img_url} alt={e._id} />
+
+       <img src={e.img_url} alt={e._id} />
+        <Link className = "hikeImg" to={"/hike/" + region + '/' + e._id}>Hike Details</Link>
+
       </div>
     );
   });
 return (
     <>
-      {loading ? <div>Loading...</div> : <div>{hikeList}</div>}
+      {loading === true ? <div><WindMillLoading/></div> : <div>{hikeList}</div>}
     </>
   )
 }

@@ -7,6 +7,7 @@ import Hikes from './components/Hikes'
 import AddHike from './components/AddHike'
 import EditHike from './components/EditHike'
 
+
 function App() {
   return (
     <div className="App">
@@ -24,13 +25,11 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/regions/:region" element={<Region />} />
           <Route path="/about" element={<About/>}/>
-          <Route path="/hike/:_id" element={<Hikes />} />
+          <Route path="/hike/:region/:_id" element={<Hikes />} />
           <Route path="/addhike" element={<AddHike />} />
-          <Route path='/edithike:_id' element={<EditHike/>} />
+          <Route path='/edithike/:region/:_id' element={<EditHike/>} />
         </Routes>
       </main>
-    
-
       <footer className="footer">
                 <div>
                   <Link to="/addhike">Add a Hike</Link>
@@ -39,7 +38,6 @@ function App() {
                     </p>
                 </div>
       </footer>
-
     </div>
   );
 }
