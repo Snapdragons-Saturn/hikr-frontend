@@ -4,13 +4,29 @@
 *{
   font-family:'Lato','Helvetica Neue', Arial, sans-serif;
 }
+
+html {
+  background: url("https://glenella.com/wp-content/uploads/2016/01/attractions-in-north-georgia-1.jpg")
+    no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
 .App{
-  background-color:#6c7c59;
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 95vh;
 }
 .title{
   font-size: 40px;
   text-align: center;
   margin-top: 0;
+  color: #447f2d;
+  font-family:'Lato','Helvetica Neue', Arial, sans-serif;
 }
 .nav{
   background-color: #EAD6A0;
@@ -26,6 +42,7 @@
   text-decoration: none;
   color: #D87C74;
 }
+
 .nav2:hover{
   color: white;
   text-decoration: underline;
@@ -39,8 +56,10 @@
 }
 .footer{
   background-color: #EAD6A0;
-  display: flex;
   border-radius: 12px;
+  position: fixed;
+  bottom: 0;
+  width: 100vw;
 }
 /* region styling */
 .regionMap{
@@ -55,13 +74,14 @@
   margin: auto;
   border-radius: 15px;
 }
+
 .hikeLinks{
   font-size: xx-large;
   color:#D87C74;
   display:flex;
   justify-content: center;
   text-decoration: none;
-  margin-top: 1vw;
+  margin: auto;
 }
 .hikeLinks:hover{
   color: white;
@@ -80,4 +100,37 @@
   color: white;
   text-decoration: underline;
   font-style: italic;
+}
+
+.homeLinks {
+  font-size: xx-large;
+  color:#D87C74;
+  display:flex;
+  justify-content: center;
+  text-decoration: none;
+  margin-top: 6vh;
+}
+
+.homeLinks:hover{
+  text-decoration: underline;
+  font-style: italic;
+}
+
+.img1{
+  margin: auto;
+  text-align: center;
+}
+
+.addHikeLink {
+  margin: auto;
+  text-align: center;
+}
+
+.addHikeFooter {
+  text-decoration: underline;
+  color: rgb(1, 26, 8);
+}
+
+.addHikeFooter:hover{
+  font-style:italic;
 }

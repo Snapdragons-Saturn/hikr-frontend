@@ -25,14 +25,14 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/regions/:region" element={<Region />} />
           <Route path="/about" element={<About/>}/>
-          <Route path="/hike/:region/:_id" element={<Hikes />} />
+          <Route path="/hike/:_id" element={<Hikes />} />
           <Route path="/addhike" element={<AddHike />} />
           <Route path='/edithike/:region/:_id' element={<EditHike/>} />
         </Routes>
       </main>
       <footer className="footer">
-                <div>
-                  <Link to="/addhike">Add a Hike</Link>
+                <div className="addHikeLink">
+                  <Link className="addHikeFooter"to="/addhike">Add a Hike</Link>
                     <p>
                         &copy; 2020 Thomas Hummel, Bella Maldonado, Gavin Southerland, <a href="mailto:Iyadabdulwahid23@gmail.com" class="footer__link">Iyad Abdulwahid</a>
                     </p>
