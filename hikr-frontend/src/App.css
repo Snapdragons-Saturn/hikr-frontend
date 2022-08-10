@@ -67,9 +67,14 @@ nav2:hover{
 
 .about_text{
   font-size: large;
-  color:#D87C74;;
-  background-color: #EAD6A0;
+  color: #653d28ef;
+  background-color: rgba(158, 149, 80, 0.516);
   border-radius: 7px;
+  width: 30vw;
+  text-align: center;
+  margin: auto;
+  padding-bottom: 2vh;
+  margin-top: 10vh;
 }
 .footer{
   background-color: rgba(158, 149, 80, 0.516);
@@ -89,13 +94,15 @@ nav2:hover{
   border-radius: 15px;
   margin: auto;
   text-align: center;
+  background-size: cover;
+  background-position: center;
 }
 
 .regionImage{
   margin: auto;
-  
-  object-fit:cover;
+  overflow: hidden;
   text-align: center;
+  margin-left: -50%;
 }
 
 .hikeLinks{
@@ -218,4 +225,73 @@ nav2:hover{
 .Sign-up-form{
   margin: auto;
   text-align: center;
+}
+
+.hikeParagraph {
+  font-family: 'forest-font';
+  color: #301201;
+  font-size: 4vh;
+  /* padding-bottom: 10vh; */
+}
+
+.hikeDiv{
+  text-align: center;
+  background-color: rgba(158, 149, 80, 0.516);
+  width: 30vw;
+  margin: auto;
+}
+
+.hikeEditLink{
+  font-family: 'forest-font2';
+  color: #653d28ef;
+  font-size: 3vh;
+  text-decoration: none;
+  
+}
+
+.hikeEditLink:hover{
+  text-decoration: underline overline;
+}
+
+.hikeEditLinkDiv{
+  padding-bottom: 10vh;
+}
+
+.hikePageTitle{
+  font-family: 'forest-font2';
+  color: #653d28ef;
+  font-size: 5vh;
+  text-decoration: none;
+}
+
+.hikePageImg{
+  margin: auto; 
+  width: 40vh;
+  text-align: center;
+}
+
+.hikePageImgDiv{
+  height: cover;
+  margin: auto;
+  text-align: center;
+  margin-top: 4vh;
+}
+
+.editHikeDiv{
+  text-align: center;
+  background-color: rgba(158, 149, 80, 0.516);
+  width: 30vw;
+  margin: auto;
+  padding-bottom: 4vh;
+  margin-top: 15vh;
+  border-radius: 12px;
+}
+
+.editHikeHeading{
+  font-family: 'forest-font';
+  color: #653d28ef;
+  font-size: 5vh;
+  text-decoration: none;
+  padding-top: 2vh;
+  margin-bottom: 3vh;
 }

@@ -35,8 +35,8 @@ const EditHike = () => {
 
   console.log(place)
 
-  return <div>
-    <h2>Editing {hike.hikeName}</h2>
+  return <div className="editHikeDiv">
+    <h2 className="editHikeHeading">Edit {hike.hikeName}</h2>
     <form onSubmit={handleSubmit}>
         <label>State: </label>
         <select 
@@ -96,6 +96,8 @@ const EditHike = () => {
           <option value="WI">Wisconson</option>
           <option value="WY">Wyoming</option>
           </select>
+          <br></br>
+          <br></br>
         <label>Hike Name: </label>
         <input
         id = "hikeName" 
@@ -103,6 +105,8 @@ const EditHike = () => {
         defaultValue={hike.hikeName}
         onChange={handleChange}>
         </input>
+        <br></br>
+        <br></br>
         <label>Hike Difficulty: </label>
         <select
           id="hikeDiff"
@@ -114,7 +118,8 @@ const EditHike = () => {
           <option value = "Hard">Hard</option>
           <option value = "Very Hard">Very Hard</option>
           </select>
-
+          <br></br>
+          <br></br>
         <label>Hike Distance: </label>
         <input 
         id="hikeLen"
@@ -122,7 +127,8 @@ const EditHike = () => {
         defaultValue={hike.hikeLen}
         onChange={handleChange}>
         </input>
-
+        <br></br>
+        <br></br>
         <label>Hike Terrain: </label>
         <input 
         id="hikeTerrain"
@@ -130,8 +136,8 @@ const EditHike = () => {
         defaultValue={hike.hikeTerrain}
         onChange={handleChange}>
         </input>
-
-
+        <br></br>
+        <br></br>
         <label>Hike Description: </label>
         <input 
         id="hikeDesc"
@@ -140,7 +146,8 @@ const EditHike = () => {
         onChange={handleChange}>
         </input>
         <button type="submit">Update Hike</button>
-
+        <br></br>
+        <br></br>
         <label>Image URL: </label>
         <input 
         id="img_url"
@@ -148,8 +155,11 @@ const EditHike = () => {
         defaultValue={hike.img_url}
         onChange={handleChange}>
         </input>
+        <br></br>
+        <br></br>
         <button type="submit">Update Hike</button>
     </form>
+    <br></br>
     <button onClick={handleDelete}>Delete Hike</button>
   </div>;
 };

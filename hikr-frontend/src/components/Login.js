@@ -1,11 +1,20 @@
 import { useEffect, useState } from "react";
 import {Routes, Route, Link} from "react-router-dom"
+import { WindMillLoading } from 'react-loadingg';
 
 
 function Login (){
 //first add declare state for errors and submits
     const [errorMessages, setErrorMessages] = useState({});
     const [isSubmitted, setIsSubmitted] = useState(false);
+    const [loading, setLoading] = useState(true)
+
+
+    useEffect(() => {
+        setTimeout(() => setLoading(false), 500)
+      }, [])
+
+
  // this function allows the error message to return as JSX
     const renderErrorMessage = (name) =>
     name === errorMessages.name && (
@@ -22,6 +31,8 @@ function Login (){
 
 
     return(
+        <div>
+        {loading === true ? <div><WindMillLoading height="large"/></div> :
         <div className="login-Form">
             <div className="titleLogin">Sign In</div>
             <div className="login-form">
@@ -43,14 +54,13 @@ function Login (){
                     
                 </div>
             </form>
-
-
             <Link className="signUpLink2" to='/Sign-Up'>
                 <h1>Sign-Up</h1>
             </Link>
         
         </div>
-        
+        }
+        </div>        
     );
 }
 
