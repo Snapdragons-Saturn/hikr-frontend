@@ -33,7 +33,7 @@ function App() {
           <Route path="/about" element={<About/>}/>
           <Route path="/hike/:_id" element={<Hikes />} />
           <Route path="/addhike" element={<AddHike />} />
-          <Route path='/edithike/:region/:_id' element={<EditHike/>} />
+          <Route path='/edithike/:_id' element={<EditHike/>} />
           <Route path="/Sign-Up" element={<SignUp />} />
         </Routes>
       </main>
