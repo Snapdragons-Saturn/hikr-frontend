@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import axios from "axios";
 import { Link } from "react-router-dom";
 import list from '../list.json'
-import { WindMillLoading } from 'react-loadingg';
+// import { WindMillLoading } from 'react-loadingg';
 
 
 
@@ -29,11 +29,12 @@ const Home = () => {
   )});
   return (
   <div>
-  {loading === true ? <div><WindMillLoading height="large"/></div>  : 
+  {/* {loading === true ? <div><WindMillLoading height="large"/></div>  :  */}
   <div>
   <h1 className = "title">Hikr</h1> 
   <div className="imgimg">{regionList}</div>
-  </div>}
+  </div>
+  {/* } */}
   </div>
   
   )

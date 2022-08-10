@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import {useParams, Link} from 'react-router-dom'
-import { WindMillLoading } from 'react-loadingg';
+// import { WindMillLoading } from 'react-loadingg';
 
 const Hikes = () => {
     const {region, _id} = useParams()
@@ -22,7 +22,7 @@ const Hikes = () => {
 
     return (
        <>
-        {loading === true ?  <div><WindMillLoading/></div> :
+        {/* {loading === true ?  <div><WindMillLoading/></div> : */}
         <div>
             <h1>{hike.hikeName}</h1>
             <Link to = {"/edithike/" + region + '/' + hike._id}> Edit Hike </Link>
@@ -34,7 +34,7 @@ const Hikes = () => {
             </p>
             <img src={hike.img_url} alt =''/>
             </div>
-        }
+        {/* } */}
         </> 
     );
 };

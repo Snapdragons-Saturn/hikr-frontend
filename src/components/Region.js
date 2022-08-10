@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import { useParams, Link } from "react-router-dom";
-import { WindMillLoading } from 'react-loadingg';
+// import { WindMillLoading } from 'react-loadingg';
 
 function Region() {
   const { region } = useParams();
@@ -35,7 +35,7 @@ function Region() {
   });
 return (
     <>
-      {loading === true ? <div><WindMillLoading/></div> : <div>{hikeList}</div>}
+      {/* {loading === true ? <div><WindMillLoading/></div> : <div>{hikeList}</div>} */}
     </>
   )
 }
