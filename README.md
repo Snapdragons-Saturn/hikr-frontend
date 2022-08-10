@@ -31,5 +31,8 @@ Hikr Frontend was built by using React, CSS, HTML, and Javascript.
 
 <img width="621" alt="Screen Shot 2022-08-10 at 5 10 00 PM" src="https://user-images.githubusercontent.com/30086186/184038451-d76ac091-bca3-40d1-8867-09e2f0b5dd90.png">
 
+## Link To Live Site
+
+https://chic-tiramisu-4c79ca.netlify.app/
 
 
