@@ -84,26 +84,7 @@ nav2:hover{
   width: 100vw;
 }
 /* region styling */
-.regionMap{
-  display:block;
-  /* position:relative; */
-  top: 7vw;
-  width: 80vw;
-  color:#EAD6A0;
-  overflow: hidden;
-  border-radius: 15px;
-  margin: auto;
-  text-align: center;
-  background-size: cover;
-  background-position: center;
-}
 
-.regionImage{
-  margin: auto;
-  overflow: hidden;
-  text-align: center;
-  margin-left: -50%;
-}
 
 .hikeLinks{
   font-size: xx-large;
@@ -277,6 +258,34 @@ nav2:hover{
   margin-top: 4vh;
 }
 
+.regionMap{
+  display:block;
+  /* position:relative; */
+  top: 7vw;
+  width: 40vw;
+  color:#EAD6A0;
+  overflow: hidden;
+  margin: auto;
+  text-align: center;
+}
+
+.regionImageDiv {
+  height: cover;
+  margin: auto;
+  text-align: center;
+  width: 100vw;
+  margin: auto;
+}
+
+
+.regionImage{
+  margin: auto; 
+  width: 40vh;
+  text-align: center;
+  object-fit: cover;
+}
+
+
 .editHikeDiv{
   text-align: center;
   background-color: rgba(158, 149, 80, 0.516);
@@ -295,3 +304,4 @@ nav2:hover{
   padding-top: 2vh;
   margin-bottom: 3vh;
 }
+
