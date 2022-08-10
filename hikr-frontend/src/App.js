@@ -6,6 +6,8 @@ import Region from './components/Region';
 import Hikes from './components/Hikes'
 import AddHike from './components/AddHike'
 import EditHike from './components/EditHike'
+import Login from './components/Login'
+import SignUp from './components/Sign-Up';
 
 
 function App() {
@@ -13,21 +15,25 @@ function App() {
     <div className="App">
     <nav className = "nav">
       <Link className="nav2" to="/">
-        <h1>Home</h1>
+        <h1 className="navStyle">Home</h1>
       </Link>
       <Link className="nav2" to="/about">
-          <h1>About</h1>
+          <h1 className="navStyle">About</h1>
+        </Link>
+        <Link className="nav2" to="/login">
+          <h1 className="navStyle">Log In</h1>
         </Link>
       </nav>
-      <h1 className = "title">Hikr App! Where all your hiking dreams come true!</h1>
       <main className="main">
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/regions/:region" element={<Region />} />
+          <Route path="/login" element={<Login/>} />
           <Route path="/about" element={<About/>}/>
           <Route path="/hike/:_id" element={<Hikes />} />
           <Route path="/addhike" element={<AddHike />} />
-          <Route path='/edithike/:region/:_id' element={<EditHike/>} />
+          <Route path='/edithike/:_id' element={<EditHike/>} />
+          <Route path="/Sign-Up" element={<SignUp />} />
         </Routes>
       </main>
       <footer className="footer">
