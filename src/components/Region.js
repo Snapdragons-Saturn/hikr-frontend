@@ -19,11 +19,14 @@ function Region() {
     getHikes()
   }, []);
   const getHikes = () => {
-    axios.get(`https://desolate-ocean-19551.herokuapp.com/${region}`).then((res) => {
+    axios.get(`https://desolate-ocean-19551.herokuapp.com/api/hike/${region}`).then((res) => {
       console.log(res.data)
         setHike(res.data);
       });
   }
+
+console.log(hike)
+
   let hikeList = hike.map((e) => {
     return (
       //display region info below
@@ -36,6 +39,7 @@ function Region() {
 return (
     <>
       {/* {loading === true ? <div><WindMillLoading/></div> : <div>{hikeList}</div>} */}
+      <div>{hikeList}</div>
     </>
   )
 }

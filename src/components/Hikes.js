@@ -20,24 +20,46 @@ const Hikes = () => {
       }, []);
     
 
-    return (
-       <>
-        {/* {loading === true ?  <div><WindMillLoading/></div> : */}
-        <div>
-            <h1>{hike.hikeName}</h1>
-            <Link to = {"/edithike/" + region + '/' + hike._id}> Edit Hike </Link>
-            <p>
-                State: {hike.stateAbb}
-                Hike Difficulty: {hike.hikeDiff}
-                Hike Length: {hike.hikeLen}
-                Hike Terrain: {hike.hikeTerrain}
-            </p>
-            <img src={hike.img_url} alt =''/>
+      return (
+        <>
+          {loading === true ? (
+            <div>
+             
             </div>
-        {/* } */}
-        </> 
-    );
-};
+          ) : (
+            <div>
+              <div className="hikePageImgDiv">
+              <h1 className="hikePageTitle">{hike.hikeName}</h1>
+                <img className="hikePageImg" src={hike.img_url} alt="" />
+              </div>
+              <div className="hikeDiv">
+                <p className="hikeParagraph">
+                  State: {hike.stateAbb}
+                  <br></br>
+                  <br></br>
+                  Hike Difficulty: {hike.hikeDiff}
+                  <br></br>
+                  <br></br>
+                  Hike Length: {hike.hikeLen}
+                  <br></br>
+                  <br></br>
+                  Hike Terrain: {hike.hikeTerrain}
+                </p>
+                <div className="hikeEditLinkDiv">
+                <Link
+                  className="hikeEditLink"
+                  to={"/edithike/" + hike._id}
+                >
+                  {" "}
+                  Edit Hike{" "}
+                </Link>
+                </div>
+              </div>
+            </div>
+          )}
+        </>
+      );
+    };
 
 export default Hikes;
 

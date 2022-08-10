@@ -28,17 +28,16 @@ const Home = () => {
     
   )});
   return (
-  <div>
-  {/* {loading === true ? <div><WindMillLoading height="large"/></div>  :  */}
-  <div>
-  <h1 className = "title">Hikr</h1> 
-  <div className="imgimg">{regionList}</div>
-  </div>
-  {/* } */}
-  </div>
-  
-  )
-  };
+    <div>
+    {loading === true ? <div></div>  : 
+    <div>
+    <h1 className = "title">Hikr</h1> 
+    <div className="imgimg">{regionList}</div>
+    </div>}
+    </div>
+    
+    )
+    };
 
 
 

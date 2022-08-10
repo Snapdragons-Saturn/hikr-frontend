@@ -2,8 +2,7 @@
 @import url("https://fonts.googleapis.com/css?family=Raleway:400,400i,700");
 @import url(https://fonts.googleapis.com/css?family=Kaushan+Script);
 *{
-  /* font-family:'Lato','Helvetica Neue', Arial, sans-serif; */
-  
+  font-family:'Lato','Helvetica Neue', Arial, sans-serif;
 }
 
 @font-face {
@@ -55,26 +54,27 @@ html {
   border-radius: 12px;
   text-decoration: none;
 }
-.nav3{
-  color: #653d28ef;
-  font-family: 'forest-font';
-  display: flex;
-  justify-content: space-around;
-  border-radius: 12px;
-  text-decoration: none;
 
-}.nav3:hover{
-  text-decoration: underline overline;
+nav2:hover{
+  color: white;
+  text-decoration: underline;
 }
 
 .nav2:hover{
   text-decoration: underline overline;
+  color: #653d28ef;
 }
+
 .about_text{
   font-size: large;
-  color:#D87C74;;
-  background-color: #EAD6A0;
+  color: #653d28ef;
+  background-color: rgba(158, 149, 80, 0.516);
   border-radius: 7px;
+  width: 30vw;
+  text-align: center;
+  margin: auto;
+  padding-bottom: 2vh;
+  margin-top: 10vh;
 }
 .footer{
   background-color: rgba(158, 149, 80, 0.516);
@@ -84,24 +84,7 @@ html {
   width: 100vw;
 }
 /* region styling */
-.regionMap{
-  display:block;
-  /* position:relative; */
-  top: 7vw;
-  width: 80vw;
-  color:#EAD6A0;
-  overflow: hidden;
-  border-radius: 15px;
-  margin: auto;
-  text-align: center;
-}
 
-.regionImage{
-  margin: auto;
-  
-  object-fit:cover;
-  text-align: center;
-}
 
 .hikeLinks{
   font-size: xx-large;
@@ -170,23 +153,33 @@ html {
 }
 
 
-.signUpLink{
+.UpLink2{
+  font-family: 'forest-font';
   display: block;
   justify-content: center;
   border-radius: 12px;
   text-decoration: none;
-  color: #D87C74
+  color:#2e0402;
 }
 
 .signUpLink:hover{
-  color:#447f2d;
-  text-decoration: underline;
-  font-style: italic;
+  
+  text-decoration: overline underline;
 }
 .login-Form{
-  display: flex;
-  justify-content: space-around;
+  text-align: center;
+  padding: 4vh;
 } 
+
+.titleLogin{
+  font-size: 70px;
+  text-align: center;
+  color: #653d28ef;
+  font-family: "forest-font";
+  margin-top: 6vh;
+  margin-bottom: 4vh;
+}
+
 .hikeTitle {
   color:#2e0402;
   display:flex;
@@ -208,4 +201,106 @@ html {
   color: #653d28ef;
   font-family: "forest-font";
   font-size: 3vh;
+}
+
+.Sign-up-form{
+  margin: auto;
+  text-align: center;
+}
+
+.hikeParagraph {
+  font-family: 'forest-font';
+  color: #301201;
+  font-size: 4vh;
+  /* padding-bottom: 10vh; */
+}
+
+.hikeDiv{
+  text-align: center;
+  background-color: rgba(158, 149, 80, 0.516);
+  width: 30vw;
+  margin: auto;
+}
+
+.hikeEditLink{
+  font-family: 'forest-font2';
+  color: #653d28ef;
+  font-size: 3vh;
+  text-decoration: none;
+  
+}
+
+.hikeEditLink:hover{
+  text-decoration: underline overline;
+}
+
+.hikeEditLinkDiv{
+  padding-bottom: 10vh;
+}
+
+.hikePageTitle{
+  font-family: 'forest-font2';
+  color: #653d28ef;
+  font-size: 5vh;
+  text-decoration: none;
+}
+
+.hikePageImg{
+  margin: auto; 
+  width: 40vh;
+  text-align: center;
+}
+
+.hikePageImgDiv{
+  height: cover;
+  margin: auto;
+  text-align: center;
+  margin-top: 4vh;
+}
+
+.regionMap{
+  display:block;
+  /* position:relative; */
+  top: 7vw;
+  width: 40vw;
+  color:#EAD6A0;
+  overflow: hidden;
+  margin: auto;
+  text-align: center;
+}
+
+.regionImageDiv {
+  height: cover;
+  margin: auto;
+  text-align: center;
+  width: 100vw;
+  margin: auto;
+}
+
+
+.regionImage{
+  margin: auto; 
+  width: 40vh;
+  text-align: center;
+  object-fit: cover;
+}
+
+
+.editHikeDiv{
+  text-align: center;
+  background-color: rgba(158, 149, 80, 0.516);
+  width: 30vw;
+  margin: auto;
+  padding-bottom: 4vh;
+  margin-top: 15vh;
+  border-radius: 12px;
+}
+
+.editHikeHeading{
+  font-family: 'forest-font';
+  color: #653d28ef;
+  font-size: 5vh;
+  text-decoration: none;
+  padding-top: 2vh;
+  margin-bottom: 3vh;
 }

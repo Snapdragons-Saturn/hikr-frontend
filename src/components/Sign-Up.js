@@ -8,6 +8,11 @@ function SignUp () {
 		valid: '',
 	}
     const [signUp, setSignUp] = useState(initialSignUp)
+	const [loading, setLoading] = useState(true);
+
+	useEffect(() => {
+		setTimeout(() => setLoading(false), 500);
+	  }, []);
 
 	const handleSubmit = (event) => {
 		event.preventDefault()
@@ -24,47 +29,59 @@ function SignUp () {
 		}
 //Add a methods for handling each input's onChange event and set the value of each input to be what's currently stored in state.
 	const handleChange = (event) => {
-		setSignUp({...setSignUp, [event.target.id]: event.target.value})
-		
-	
+		setSignUp({...setSignUp, [event.target.id]: event.target.value})	
 	}
-	
 
-
-
-    return(
-        <div className='Sign-up-form'>
-			<h1>Sign Up</h1>
-			<form>
-				<input 
-				type='text' 
-				placeholder='Username'
-				id='username' 
-				onChange={handleChange} 
-				value={signUp.username}/> 
-				<label htmlFor='username'>Username</label>
-
-				<input 
-				type='password' 
-				placeholder='Password' id='password'
-				onChange={handleChange} 
-				value={signUp.password} />
-				<label htmlFor='password'>Password</label>
-
+    return (
+		<div>
+		  {loading === true ? (
+			<div>
+			  
+			</div>
+		  ) : (
+			<div className="Sign-up-form">
+			  <h1 className="titleLogin">Sign Up</h1>
+			  <form>
+				<label htmlFor="username">Username</label>
 				<input
-				type='password'
-				placeholder='Confirm password'
-				id='passwordConfirm'
-				onChange={handleChange}
-				value={signUp.passwordConfirm}
+				  type="text"
+				  placeholder="Username"
+				  id="username"
+				  onChange={handleChange}
+				  value={signUp.username}
 				/>
-				<label htmlFor='passwordConfirm'>Confirm password </label>
-
-				<button type='submit' onClick={handleSubmit} >Sign Up</button>
-				<p className={signUp.valid ? 'valid' : 'invalid'}>Passwords must match.</p>
-			</form>
+	
+				<br></br>
+				<label htmlFor="password">Password</label>
+				<input
+				  type="password"
+				  placeholder="Password"
+				  id="password"
+				  onChange={handleChange}
+				  value={signUp.password}
+				/>
+				<br></br>
+				<label htmlFor="passwordConfirm">Confirm password </label>
+				<input
+				  type="password"
+				  placeholder="Confirm password"
+				  id="passwordConfirm"
+				  onChange={handleChange}
+				  value={signUp.passwordConfirm}
+				/>
+				<br></br>
+				<br></br>
+				<button type="submit" onClick={handleSubmit}>
+				  Sign Up
+				</button>
+				<p className={signUp.valid ? "valid" : "invalid"}>
+				  Passwords must match.
+				</p>
+			  </form>
+			</div>
+		  )}
 		</div>
-    )
-}
+	  );
+	}
 
 export default SignUp
