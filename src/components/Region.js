@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import { useParams, Link } from "react-router-dom";
-// import { WindMillLoading } from 'react-loadingg';
+import {Rings} from 'react-loader-spinner'
 
 function Region() {
   const { region } = useParams();
@@ -19,7 +19,7 @@ function Region() {
     getHikes()
   }, []);
   const getHikes = () => {
-    axios.get(`https://desolate-ocean-19551.herokuapp.com/api/hike/${region}`).then((res) => {
+    axios.get(`https://desolate-ocean-19551.herokuapp.com/api/hikes/regions/${region}`).then((res) => {
       console.log(res.data)
         setHike(res.data);
       });
@@ -38,8 +38,7 @@ console.log(hike)
   });
 return (
     <>
-      {/* {loading === true ? <div><WindMillLoading/></div> : <div>{hikeList}</div>} */}
-      <div>{hikeList}</div>
+      {loading === true ? <div className='loading-icon'><Rings Audio color="#B2AC88" height={80} width={80}/></div> : <div>{hikeList}</div>}
     </>
   )
 }
