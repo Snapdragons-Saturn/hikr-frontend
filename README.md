@@ -6,7 +6,7 @@ Hikr is an application which allows useres to connect with their local enviernme
 
 ## Pictures Of The Site
 <img width="1027" alt="Screen Shot 2022-08-10 at 4 52 58 PM" src="https://user-images.githubusercontent.com/30086186/184037137-a54ef41e-e61b-4dcd-991f-bd957b9041b7.png">
-<img width="1440" alt="Screen Shot 2022-08-10 at 4 59 19 PM" src="https://user-images.githubusercontent.com/30086186/184037527-3be22078-24f7-45bd-a4ce-3f3dd77d618d.png">
+<img width="1440" alt="Screen Shot 2022-08-10 at 5 30 34 PM" src="https://user-images.githubusercontent.com/30086186/184040479-7ce3bdfd-af19-4e17-906a-ea0e9f2542d5.png">
 <img width="1027" alt="Screen Shot 2022-08-10 at 4 53 41 PM" src="https://user-images.githubusercontent.com/30086186/184037264-b764a01e-79d9-42b5-a695-bae7084084e5.png">
 <img width="1028" alt="Screen Shot 2022-08-10 at 4 54 27 PM" src="https://user-images.githubusercontent.com/30086186/184037298-80ce7c67-d230-4056-ab8e-07971d2c5541.png">
 
