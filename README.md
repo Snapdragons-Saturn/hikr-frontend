@@ -1,70 +1,35 @@
-# Getting Started with Create React App
+# Hikr ReadME
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Description 
 
-## Available Scripts
+Hikr is an application which allows useres to connect with their local enviernment by providing a platform to locate, add, and save hikes in their area. 
 
-In the project directory, you can run:
+## Pictures Of The Site
+<img width="1027" alt="Screen Shot 2022-08-10 at 4 52 58 PM" src="https://user-images.githubusercontent.com/30086186/184037137-a54ef41e-e61b-4dcd-991f-bd957b9041b7.png">
+<img width="1440" alt="Screen Shot 2022-08-10 at 4 59 19 PM" src="https://user-images.githubusercontent.com/30086186/184037527-3be22078-24f7-45bd-a4ce-3f3dd77d618d.png">
+<img width="1027" alt="Screen Shot 2022-08-10 at 4 53 41 PM" src="https://user-images.githubusercontent.com/30086186/184037264-b764a01e-79d9-42b5-a695-bae7084084e5.png">
+<img width="1028" alt="Screen Shot 2022-08-10 at 4 54 27 PM" src="https://user-images.githubusercontent.com/30086186/184037298-80ce7c67-d230-4056-ab8e-07971d2c5541.png">
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Technologies Used
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Hikr Frontend was built by using React, CSS, HTML, and Javascript. 
 
-### `npm test`
+## User Stories 
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- As an avid hiker I want access to new hiking trails when I visit new places.
+- As a hiker, I want to be able to post a new hike that I loved.
+- As a hiker, I want to be able to edit existing hikes.
+- As a hiker, and I see a duplicate of a trail I want to be able to delete the duplicate.
+- As a user, I want the app to be easy to navigate and look pleasing.
+- As a future employer, I want to see the collaboration skills from each developer via the culmination of a well executed, functioning application.
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Wireframes
+<img width="621" alt="Screen Shot 2022-08-10 at 5 09 24 PM" src="https://user-images.githubusercontent.com/30086186/184038425-a3073af1-36e4-464f-ac1d-3c2ab282c683.png">
+<img width="623" alt="Screen Shot 2022-08-10 at 5 09 41 PM" src="https://user-images.githubusercontent.com/30086186/184038435-fe813190-c81f-4bf3-8ce6-daabdaf7f625.png">
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+<img width="621" alt="Screen Shot 2022-08-10 at 5 10 00 PM" src="https://user-images.githubusercontent.com/30086186/184038451-d76ac091-bca3-40d1-8867-09e2f0b5dd90.png">
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
