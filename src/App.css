@@ -1,0 +1,211 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:400,400i,700");
+@import url("https://fonts.googleapis.com/css?family=Raleway:400,400i,700");
+@import url(https://fonts.googleapis.com/css?family=Kaushan+Script);
+*{
+  /* font-family:'Lato','Helvetica Neue', Arial, sans-serif; */
+  
+}
+
+@font-face {
+  font-family: 'forest-font';
+  src: url(fonts/CfOneTwoTreesRegular-4LGp\ copy.ttf);
+  font-style: normal;
+  font-weight: 100;
+}
+
+@font-face {
+  font-family: 'forest-font2';
+  src: url(fonts/Jfwildwood-ldYZ\ copy.ttf);
+}
+
+html {
+  background: url("https://glenella.com/wp-content/uploads/2016/01/attractions-in-north-georgia-1.jpg")
+    no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.App{
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 95vh;
+}
+.title{
+  font-size: 70px;
+  text-align: center;
+  color: #653d28ef;
+  font-family: "forest-font";
+  margin-top: 6vh;
+  margin-bottom: 0
+}
+.nav{
+  background-color: rgba(158, 149, 80, 0.516);
+  display: flex;
+  justify-content: space-around;
+  border-radius: 10px;
+  
+}
+.nav2{
+  display: flex;
+  justify-content: space-around;
+  border-radius: 12px;
+  text-decoration: none;
+}
+.nav3{
+  color: #653d28ef;
+  font-family: 'forest-font';
+  display: flex;
+  justify-content: space-around;
+  border-radius: 12px;
+  text-decoration: none;
+
+}.nav3:hover{
+  text-decoration: underline overline;
+}
+
+.nav2:hover{
+  text-decoration: underline overline;
+}
+.about_text{
+  font-size: large;
+  color:#D87C74;;
+  background-color: #EAD6A0;
+  border-radius: 7px;
+}
+.footer{
+  background-color: rgba(158, 149, 80, 0.516);
+  border-radius: 12px;
+  position: fixed;
+  bottom: 0;
+  width: 100vw;
+}
+/* region styling */
+.regionMap{
+  display:block;
+  /* position:relative; */
+  top: 7vw;
+  width: 80vw;
+  color:#EAD6A0;
+  overflow: hidden;
+  border-radius: 15px;
+  margin: auto;
+  text-align: center;
+}
+
+.regionImage{
+  margin: auto;
+  
+  object-fit:cover;
+  text-align: center;
+}
+
+.hikeLinks{
+  font-size: xx-large;
+  color:#2e0402;
+  display:flex;
+  justify-content: center;
+  text-decoration: none;
+  margin: auto;
+  font-family: 'forest-font';
+  font-size: 6vh;
+  background-color: rgba(158, 149, 80, 0.516);
+}
+.hikeLinks:hover{
+  color: white;
+}
+
+.countryLinks{
+  text-decoration: none;
+  display: flex;
+  justify-content: space-around;
+  color:#D87C74;
+  font-size: xx-large
+}
+.countryLinks:hover{
+  color: white;
+  text-decoration: underline;
+  font-style: italic;
+}
+
+.homeLinks {
+  font-size: xx-large;
+  color: #653d28ef;
+  font-family: "forest-font2";
+  display:flex;
+  justify-content: center;
+  text-decoration: none;
+  margin-top: 6vh;
+}
+
+.homeLinks:hover{
+  text-decoration: underline overline;
+}
+
+.imgimg{
+  background-color: rgba(158, 149, 80, 0.516);
+  width: 50vh;
+  margin: auto;
+  border-radius: 25px;
+  padding: 2vh;
+  padding-top: .5vh;
+}
+
+
+.addHikeLink {
+  margin: auto;
+  text-align: center;
+}
+
+.addHikeFooter {
+  text-decoration: underline;
+  color: rgb(1, 26, 8);
+}
+
+.addHikeFooter:hover{
+  font-style:italic;
+}
+
+
+.signUpLink{
+  display: block;
+  justify-content: center;
+  border-radius: 12px;
+  text-decoration: none;
+  color: #D87C74
+}
+
+.signUpLink:hover{
+  color:#447f2d;
+  text-decoration: underline;
+  font-style: italic;
+}
+.login-Form{
+  display: flex;
+  justify-content: space-around;
+} 
+.hikeTitle {
+  color:#2e0402;
+  display:flex;
+  justify-content: center;
+  text-decoration: none;
+  margin: auto;
+  font-family: 'forest-font';
+  font-size: 4vh;
+  background-color: rgba(158, 149, 80, 0.516);
+}
+
+.navStyle {
+  color: #653d28ef;
+  font-family: "forest-font";
+  font-size: 3vh;
+}
+
+.navStyle {
+  color: #653d28ef;
+  font-family: "forest-font";
+  font-size: 3vh;
+}
