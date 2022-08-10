@@ -13,7 +13,7 @@ const Hikes = () => {
       }, [])
 
     useEffect(() => {
-        axios.get(`https://desolate-ocean-19551.herokuapp.com/api/hikes/${_id}`).then((res) => {
+        axios.get(`https://desolate-ocean-19551.herokuapp.com/${_id}`).then((res) => {
             console.log(res.data)
             setHike(res.data);
         });

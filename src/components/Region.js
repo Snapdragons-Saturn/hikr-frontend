@@ -19,7 +19,7 @@ function Region() {
     getHikes()
   }, []);
   const getHikes = () => {
-    axios.get(`https://desolate-ocean-19551.herokuapp.com/api/hikes/regions/${region}`).then((res) => {
+    axios.get(`https://desolate-ocean-19551.herokuapp.com/${region}`).then((res) => {
       console.log(res.data)
         setHike(res.data);
       });
