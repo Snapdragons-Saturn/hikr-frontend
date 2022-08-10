@@ -3,6 +3,7 @@ import axios from "axios";
 import { Link } from "react-router-dom";
 import list from '../list.json'
 // import { WindMillLoading } from 'react-loadingg';
+import { Rings } from 'react-loader-spinner'
 
 
 
@@ -29,12 +30,12 @@ const Home = () => {
   )});
   return (
   <div>
-  {/* {loading === true ? <div><WindMillLoading height="large"/></div>  :  */}
+  {loading === true ? <div className='loading-icon'><Rings Audio color="#B2AC88" height={80} width={80} /></div>  : 
   <div>
   <h1 className = "title">Hikr</h1> 
   <div className="imgimg">{regionList}</div>
   </div>
-  {/* } */}
+  } 
   </div>
   
   )

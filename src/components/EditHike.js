@@ -9,7 +9,7 @@ const EditHike = () => {
   const navigate = useNavigate()
 
   useEffect(() => {
-    axios.get(`https://desolate-ocean-19551.herokuapp.com/${_id}`).then((res) => {
+    axios.get(`https://desolate-ocean-19551.herokuapp.com/api/hikes/${_id}`).then((res) => {
       console.log(res.data)
       setHike(res.data);
     });
@@ -17,14 +17,14 @@ const EditHike = () => {
 
   const handleDelete = (event) => {
     event.preventDefault();
-    axios.delete(`https://desolate-ocean-19551.herokuapp.com/${_id}`, place).then(() => {
+    axios.delete(`https://desolate-ocean-19551.herokuapp.com/api/hikes/${_id}`, place).then(() => {
         navigate('/')
     })
   };
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    axios.put(`https://desolate-ocean-19551.herokuapp.com/${_id}`, place).then(() => {
+    axios.put(`https://desolate-ocean-19551.herokuapp.com/api/hikes/${_id}`, place).then(() => {
       navigate(`/hike/${region}/${_id}`)
     })
   };

@@ -209,3 +209,11 @@ html {
   font-family: "forest-font";
   font-size: 3vh;
 }
+
+.loading-icon{
+  display: flex;
+  justify-content: center;
+  color: #EAD6A0;
+  
+  
+}
