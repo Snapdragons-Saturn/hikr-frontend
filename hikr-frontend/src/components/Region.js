@@ -27,9 +27,13 @@ function Region() {
   let hikeList = hike.map((e) => {
     return (
       //display region info below
-      <div className="regionMap" key="">
+      <div>
+      <div className="regionMap" key={e}>
       <Link className = "hikeLinks" to={"/hike/" + e._id}>{e.hikeName}</Link>
+      </div>
+       <div className = "regionImageDiv">
        <img classname = "regionImage"src={e.img_url} alt={e._id} />
+       </div>
       </div>
     );
   });

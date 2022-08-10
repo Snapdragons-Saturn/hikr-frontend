@@ -24,11 +24,11 @@ function SignUp() {
       setSignUp({ ...setSignUp, valid: false });
       console.log("invalid");
     }
-    console.log(setSignUp);
+    console.log(signUp);
   };
   //Add a methods for handling each input's onChange event and set the value of each input to be what's currently stored in state.
   const handleChange = (event) => {
-    setSignUp({ ...setSignUp, [event.target.id]: event.target.value });
+    setSignUp({ ...signUp, [event.target.id]: event.target.value });
   };
 
   console.log(signUp);

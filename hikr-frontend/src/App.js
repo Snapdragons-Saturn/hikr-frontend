@@ -8,6 +8,7 @@ import AddHike from './components/AddHike'
 import EditHike from './components/EditHike'
 import Login from './components/Login'
 import SignUp from './components/Sign-Up';
+import User from './components/User';
 
 
 function App() {
@@ -34,6 +35,7 @@ function App() {
           <Route path="/addhike" element={<AddHike />} />
           <Route path='/edithike/:_id' element={<EditHike/>} />
           <Route path="/Sign-Up" element={<SignUp />} />
+          <Route path="/user/:userId" element={<User/>}/>
         </Routes>
       </main>
       <footer className="footer">
