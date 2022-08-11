@@ -41,7 +41,7 @@ function App() {
                 <div className="addHikeLink">
                   <Link className="addHikeFooter"to="/addhike">Add a Hike</Link>
                     <p>
-                        &copy; 2020 Thomas Hummel, Bella Maldonado, Gavin Southerland, <a href="mailto:Iyadabdulwahid23@gmail.com" class="footer__link">Iyad Abdulwahid</a>
+                        &copy; 2022 Thomas Hummel, Bella Maldonado, Gavin Southerland, <a href="mailto:Iyadabdulwahid23@gmail.com" class="footer__link">Iyad Abdulwahid</a>
                     </p>
                 </div>
       </footer>
