@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Routes, Route, Link } from "react-router-dom";
+import { Routes, Route, Link, Navigate } from "react-router-dom";
 import axios from 'axios';
 var qs = require('qs');
 
@@ -37,11 +37,11 @@ function Login() {
   const handleSubmit = (event) => {
     event.preventDefault();
 
-    console.log(signIn)
+
 
     const data = qs.stringify({
       'email': `${signIn.username}`,
-			'password': `${signIn.password}`
+      'password': `${signIn.password}`
     });
 
     const config = {
@@ -96,8 +96,8 @@ function Login() {
                 onChange={handleChange}
                 type="password"
                 name="password"
-                required 
-                />
+                required
+              />
               {renderErrorMessage("password")}
             </div>
             <div className="button-container">

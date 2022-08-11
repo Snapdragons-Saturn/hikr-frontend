@@ -27,7 +27,6 @@ function SignUp() {
 				'email': `${signUp.username}`,
 				'password': `${signUp.password}`
 			});
-			console.log(data)
 			const config = {
 				method: 'post',
 				url: 'https://desolate-ocean-19551.herokuapp.com/api/user/signup',
