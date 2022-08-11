@@ -19,10 +19,17 @@ const EditHike = () => {
 
   const handleDelete = (event) => {
     event.preventDefault();
-    axios.delete(`https://desolate-ocean-19551.herokuapp.com/api/hikes/${_id}`, place).then(() => {
-        navigate('/')
-    })
-  };
+    axios.delete(`https://desolate-ocean-19551.herokuapp.com/api/hikes/${_id}`)
+    .then(navigate('/'))
+    .catch(error => {
+        console.error('There was an error!', error);
+    });
+  }
+
+
+
+
+  
 
   const handleSubmit = (event) => {
     event.preventDefault();
