@@ -89,7 +89,7 @@ function Login() {
               />
               {renderErrorMessage("uname")}
             </div>
-            <div classname="input-container">
+            <div className="input-container">
               <label>Password</label>
               <input
                 id="password"
